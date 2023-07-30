@@ -1,0 +1,101 @@
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.507),black),url('../image/payment-g94aac4193_1280.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    /* justify-content: center; */
+
+}
+
+html{
+    font-size: 60%;
+}
+
+.form_historique{
+    display: flex;
+    width: 80rem;
+    margin: auto;
+    height: 100vh;
+}
+
+.form{
+    width: 40rem;
+    /* margin: auto; */
+    margin-top: 3rem;
+    background: rgba(213, 213, 213, 0.483);
+    backdrop-filter: blur(1);
+    border-radius: .5rem;
+    padding: 2rem;  margin-bottom: 3rem;
+    color: white;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    transition: .2s linear !important;
+}
+
+.historique{
+    width: 40rem;
+    margin-top: 3rem;
+    background: rgba(213, 213, 213, 0.483);
+    backdrop-filter: blur(1);
+    border-radius: .5rem;
+    padding: 2rem;  margin-bottom: 3rem;
+    color: white;
+    overflow-y: scroll;
+
+}
+
+.title{
+    color: brown;
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+.historique{
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    transition: .2s linear !important;
+}
+
+
+.transaction{
+    border-bottom: .2rem solid black;
+    padding-bottom: 17px;
+}
+.transaction .typeTransfer{
+    font-size: 2rem;
+    color: green;
+}
+
+.transaction .flex{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+.detail{
+    cursor: pointer;
+    font-size: 1.5rem;
+    width: 10px;
+    display: none;
+    margin-top: 2rem;
+}
+
+.historique.active{
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.form.active{
+    left: 25%;
+}
+
+
+.expediteur{
+    display: flex;
+    align-items: center;
+}
+
+/* .destinataire{
+    display: none;
+} */
